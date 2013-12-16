@@ -43,6 +43,12 @@
 		876292D6185C538900E7EA78 /* Lightbulb.obj in Resources */ = {isa = PBXBuildFile; fileRef = 876292D5185C538900E7EA78 /* Lightbulb.obj */; };
 		87CB5D03185F26F1005ADD08 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CB5D02185F26F1005ADD08 /* ForthViewController.m */; };
 		87CB5D07185F277A005ADD08 /* mini_obj.obj in Resources */ = {isa = PBXBuildFile; fileRef = 87CB5D06185F277A005ADD08 /* mini_obj.obj */; };
+		87E82886185F39DB000C6330 /* SeaPlane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 87E8287F185F39DB000C6330 /* SeaPlane.mtl */; };
+		87E82887185F39DB000C6330 /* SeaPlane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 87E82880185F39DB000C6330 /* SeaPlane.obj */; };
+		87E82888185F39DB000C6330 /* DECALS_Steel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82882185F39DB000C6330 /* DECALS_Steel.jpg */; };
+		87E82889185F39DB000C6330 /* DECALSalpha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82883185F39DB000C6330 /* DECALSalpha.jpg */; };
+		87E8288A185F39DB000C6330 /* DECALSbump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82884185F39DB000C6330 /* DECALSbump.jpg */; };
+		87E8288B185F39DB000C6330 /* Wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82885185F39DB000C6330 /* Wood.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +96,12 @@
 		87CB5D01185F26F1005ADD08 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
 		87CB5D02185F26F1005ADD08 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
 		87CB5D06185F277A005ADD08 /* mini_obj.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mini_obj.obj; sourceTree = "<group>"; };
+		87E8287F185F39DB000C6330 /* SeaPlane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SeaPlane.mtl; sourceTree = "<group>"; };
+		87E82880185F39DB000C6330 /* SeaPlane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SeaPlane.obj; sourceTree = "<group>"; };
+		87E82882185F39DB000C6330 /* DECALS_Steel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DECALS_Steel.jpg; path = sourceimages/DECALS_Steel.jpg; sourceTree = "<group>"; };
+		87E82883185F39DB000C6330 /* DECALSalpha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DECALSalpha.jpg; path = sourceimages/DECALSalpha.jpg; sourceTree = "<group>"; };
+		87E82884185F39DB000C6330 /* DECALSbump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DECALSbump.jpg; path = sourceimages/DECALSbump.jpg; sourceTree = "<group>"; };
+		87E82885185F39DB000C6330 /* Wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Wood.jpg; path = sourceimages/Wood.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +254,7 @@
 		876292AF185C4C9A00E7EA78 /* 3D */ = {
 			isa = PBXGroup;
 			children = (
+				87E8287E185F39C6000C6330 /* Plane */,
 				87CB5D05185F2759005ADD08 /* MiniCooper */,
 				876292D4185C536E00E7EA78 /* LightBulb */,
 				876292CE185C520800E7EA78 /* Car */,
@@ -296,6 +309,27 @@
 				87CB5D06185F277A005ADD08 /* mini_obj.obj */,
 			);
 			name = MiniCooper;
+			sourceTree = "<group>";
+		};
+		87E8287E185F39C6000C6330 /* Plane */ = {
+			isa = PBXGroup;
+			children = (
+				87E82882185F39DB000C6330 /* DECALS_Steel.jpg */,
+				87E82883185F39DB000C6330 /* DECALSalpha.jpg */,
+				87E82884185F39DB000C6330 /* DECALSbump.jpg */,
+				87E82885185F39DB000C6330 /* Wood.jpg */,
+				87E8287F185F39DB000C6330 /* SeaPlane.mtl */,
+				87E82880185F39DB000C6330 /* SeaPlane.obj */,
+				87E82881185F39DB000C6330 /* sourceimages */,
+			);
+			name = Plane;
+			sourceTree = "<group>";
+		};
+		87E82881185F39DB000C6330 /* sourceimages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sourceimages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +387,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E82889185F39DB000C6330 /* DECALSalpha.jpg in Resources */,
 				876292B2185C4C9A00E7EA78 /* cube.obj in Resources */,
+				87E8288B185F39DB000C6330 /* Wood.jpg in Resources */,
 				876292C0185C4C9A00E7EA78 /* cube_top.jpg in Resources */,
 				876292C5185C4C9A00E7EA78 /* Storyboard_iPad.storyboard in Resources */,
 				876292D6185C538900E7EA78 /* Lightbulb.obj in Resources */,
@@ -365,6 +401,7 @@
 				8762929B185C4C9A00E7EA78 /* iTunesArtwork in Resources */,
 				876292B6185C4C9A00E7EA78 /* cube_back.jpg in Resources */,
 				876292B4185C4C9A00E7EA78 /* cube.mtl in Resources */,
+				87E82888185F39DB000C6330 /* DECALS_Steel.jpg in Resources */,
 				87CB5D07185F277A005ADD08 /* mini_obj.obj in Resources */,
 				876292BC185C4C9A00E7EA78 /* cube_left.jpg in Resources */,
 				876292BE185C4C9A00E7EA78 /* cube_right.jpg in Resources */,
@@ -373,10 +410,13 @@
 				87629297185C4C9A00E7EA78 /* Icon.png in Resources */,
 				876292D0185C521200E7EA78 /* Lotus_HW_OBJ.obj in Resources */,
 				876292B8185C4C9A00E7EA78 /* cube_bottom.jpg in Resources */,
+				87E82887185F39DB000C6330 /* SeaPlane.obj in Resources */,
 				87629291185C4C9A00E7EA78 /* Icon-Small-50.png in Resources */,
 				8762929E185C4C9A00E7EA78 /* Default-landscape~ipad.png in Resources */,
 				87629293185C4C9A00E7EA78 /* Icon-Small.png in Resources */,
+				87E82886185F39DB000C6330 /* SeaPlane.mtl in Resources */,
 				876292A2185C4C9A00E7EA78 /* Default.png in Resources */,
+				87E8288A185F39DB000C6330 /* DECALSbump.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
