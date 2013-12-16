@@ -47,7 +47,12 @@
 							  nil];
 	
 	_mesh = [[NGLMesh alloc] initWithFile:@"Lotus_HW_OBJ.obj" settings:settings delegate:nil];
-	
+    
+    NGLMaterial *material = [NGLMaterial materialEmerald];
+    
+    _mesh.material = material;
+    [_mesh compileCoreMesh];
+ 	
 	_camera = [[NGLCamera alloc] initWithMeshes:_mesh, nil];
 	[_camera autoAdjustAspectRatio:YES animated:YES];
 	

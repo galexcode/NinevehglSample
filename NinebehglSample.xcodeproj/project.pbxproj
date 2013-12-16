@@ -41,6 +41,8 @@
 		876292D0185C521200E7EA78 /* Lotus_HW_OBJ.obj in Resources */ = {isa = PBXBuildFile; fileRef = 876292CF185C521200E7EA78 /* Lotus_HW_OBJ.obj */; };
 		876292D3185C52AC00E7EA78 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876292D2185C52AC00E7EA78 /* ThirdViewController.m */; };
 		876292D6185C538900E7EA78 /* Lightbulb.obj in Resources */ = {isa = PBXBuildFile; fileRef = 876292D5185C538900E7EA78 /* Lightbulb.obj */; };
+		87CB5D03185F26F1005ADD08 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CB5D02185F26F1005ADD08 /* ForthViewController.m */; };
+		87CB5D07185F277A005ADD08 /* mini_obj.obj in Resources */ = {isa = PBXBuildFile; fileRef = 87CB5D06185F277A005ADD08 /* mini_obj.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,9 @@
 		876292D1185C52AC00E7EA78 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		876292D2185C52AC00E7EA78 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		876292D5185C538900E7EA78 /* Lightbulb.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lightbulb.obj; sourceTree = "<group>"; };
+		87CB5D01185F26F1005ADD08 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
+		87CB5D02185F26F1005ADD08 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		87CB5D06185F277A005ADD08 /* mini_obj.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mini_obj.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +232,8 @@
 				876292CC185C510000E7EA78 /* SecondViewController.m */,
 				876292D1185C52AC00E7EA78 /* ThirdViewController.h */,
 				876292D2185C52AC00E7EA78 /* ThirdViewController.m */,
+				87CB5D01185F26F1005ADD08 /* ForthViewController.h */,
+				87CB5D02185F26F1005ADD08 /* ForthViewController.m */,
 			);
 			name = Controllers;
 			path = Sources/Controllers;
@@ -235,6 +242,7 @@
 		876292AF185C4C9A00E7EA78 /* 3D */ = {
 			isa = PBXGroup;
 			children = (
+				87CB5D05185F2759005ADD08 /* MiniCooper */,
 				876292D4185C536E00E7EA78 /* LightBulb */,
 				876292CE185C520800E7EA78 /* Car */,
 				876292B0185C4C9A00E7EA78 /* Cube */,
@@ -282,6 +290,14 @@
 			name = LightBulb;
 			sourceTree = "<group>";
 		};
+		87CB5D05185F2759005ADD08 /* MiniCooper */ = {
+			isa = PBXGroup;
+			children = (
+				87CB5D06185F277A005ADD08 /* mini_obj.obj */,
+			);
+			name = MiniCooper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +325,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					87629276185C4C9900E7EA78 = {
+						DevelopmentTeam = P4BRH39AM6;
+					};
+				};
 			};
 			buildConfigurationList = 87629272185C4C9900E7EA78 /* Build configuration list for PBXProject "NinebehglSample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -344,6 +365,7 @@
 				8762929B185C4C9A00E7EA78 /* iTunesArtwork in Resources */,
 				876292B6185C4C9A00E7EA78 /* cube_back.jpg in Resources */,
 				876292B4185C4C9A00E7EA78 /* cube.mtl in Resources */,
+				87CB5D07185F277A005ADD08 /* mini_obj.obj in Resources */,
 				876292BC185C4C9A00E7EA78 /* cube_left.jpg in Resources */,
 				876292BE185C4C9A00E7EA78 /* cube_right.jpg in Resources */,
 				87629295185C4C9A00E7EA78 /* Icon-Small@2x.png in Resources */,
@@ -367,6 +389,7 @@
 			files = (
 				876292AE185C4C9A00E7EA78 /* ViewController.m in Sources */,
 				876292D3185C52AC00E7EA78 /* ThirdViewController.m in Sources */,
+				87CB5D03185F26F1005ADD08 /* ForthViewController.m in Sources */,
 				876292AB185C4C9A00E7EA78 /* AppDelegate.m in Sources */,
 				876292CD185C510000E7EA78 /* SecondViewController.m in Sources */,
 				8762928C185C4C9A00E7EA78 /* main.m in Sources */,
@@ -415,6 +438,8 @@
 		876292C9185C4C9A00E7EA78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,6 +454,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -436,6 +462,8 @@
 		876292CA185C4C9A00E7EA78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +477,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +502,7 @@
 				876292CA185C4C9A00E7EA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

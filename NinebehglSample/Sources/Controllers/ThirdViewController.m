@@ -43,7 +43,21 @@
 							  nil];
 	
 	_mesh = [[NGLMesh alloc] initWithFile:@"Lightbulb.obj" settings:settings delegate:nil];
-	
+    
+    NGLSurfaceMulti *surfaces = [[NGLSurfaceMulti alloc] initWithSurfaces:
+                                 [NGLSurface surfacetWithStart:0 length:600 identifier:0],
+                                 [NGLSurface surfacetWithStart:600 length:1200 identifier:1],
+                                 [NGLSurface surfacetWithStart:1200 length:1800 identifier:2],
+                                 [NGLSurface surfacetWithStart:1800 length:9000 identifier:3], nil];
+    NGLMaterialMulti *materials = [[NGLMaterialMulti alloc] initWithMaterials:
+                                   [NGLMaterial materialPewter],
+                                   [NGLMaterial materialRuby],
+                                   [NGLMaterial materialSilver],
+                                   [NGLMaterial materialTurqoise], nil];
+    _mesh.material = materials;
+    _mesh.surface = surfaces;
+    
+    [_mesh compileCoreMesh];
 	_camera = [[NGLCamera alloc] initWithMeshes:_mesh, nil];
 	[_camera autoAdjustAspectRatio:YES animated:YES];
 	

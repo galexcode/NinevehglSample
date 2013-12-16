@@ -74,6 +74,26 @@
                                             <segue destination="ntp-Bj-Bqh" kind="push" id="JYZ-xk-YDm"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="eSJ-nc-xCC">
+                                        <rect key="frame" x="0.0" y="196" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eSJ-nc-xCC" id="4ct-YC-O0S">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mini cooper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fzV-jm-Y3I">
+                                                    <rect key="frame" x="20" y="11" width="91" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5za-cf-P04" kind="push" id="WjL-3M-XTf"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -134,6 +154,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSD-cV-sfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="396" y="-116"/>
+        </scene>
+        <!--Forth View Controller-->
+        <scene sceneID="3T4-xG-ga3">
+            <objects>
+                <viewController id="5za-cf-P04" customClass="ForthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xlk-5H-LRk" customClass="NGLView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="delegate" destination="5za-cf-P04" id="DRa-qG-TDv"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="rr7-Ag-7Xj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkL-dl-fzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="1208"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="roc-Pl-Ddl">
