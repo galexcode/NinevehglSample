@@ -39,7 +39,11 @@
 							  @"0.3", kNGLMeshKeyNormalize,
 							  nil];
 	
-	_mesh = [[NGLMesh alloc] initWithFile:@"SeaPlane.obj" settings:settings delegate:nil];
+	_mesh = [[NGLMesh alloc] initWithFile:@"05.obj" settings:settings delegate:nil];
+    
+    NGLMaterial *material = [NGLMaterial materialGold];
+    _mesh.material = material;
+    [_mesh compileCoreMesh];
     
 	_camera = [[NGLCamera alloc] initWithMeshes:_mesh, nil];
 	[_camera autoAdjustAspectRatio:YES animated:YES];

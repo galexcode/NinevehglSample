@@ -49,6 +49,7 @@
 		87E82889185F39DB000C6330 /* DECALSalpha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82883185F39DB000C6330 /* DECALSalpha.jpg */; };
 		87E8288A185F39DB000C6330 /* DECALSbump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82884185F39DB000C6330 /* DECALSbump.jpg */; };
 		87E8288B185F39DB000C6330 /* Wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87E82885185F39DB000C6330 /* Wood.jpg */; };
+		87E8288E185F3CA7000C6330 /* 05.obj in Resources */ = {isa = PBXBuildFile; fileRef = 87E8288D185F3CA7000C6330 /* 05.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		87E82883185F39DB000C6330 /* DECALSalpha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DECALSalpha.jpg; path = sourceimages/DECALSalpha.jpg; sourceTree = "<group>"; };
 		87E82884185F39DB000C6330 /* DECALSbump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DECALSbump.jpg; path = sourceimages/DECALSbump.jpg; sourceTree = "<group>"; };
 		87E82885185F39DB000C6330 /* Wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Wood.jpg; path = sourceimages/Wood.jpg; sourceTree = "<group>"; };
+		87E8288D185F3CA7000C6330 /* 05.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 05.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 		876292AF185C4C9A00E7EA78 /* 3D */ = {
 			isa = PBXGroup;
 			children = (
+				87E8288C185F3C9D000C6330 /* Chair */,
 				87E8287E185F39C6000C6330 /* Plane */,
 				87CB5D05185F2759005ADD08 /* MiniCooper */,
 				876292D4185C536E00E7EA78 /* LightBulb */,
@@ -332,6 +335,14 @@
 			path = sourceimages;
 			sourceTree = "<group>";
 		};
+		87E8288C185F3C9D000C6330 /* Chair */ = {
+			isa = PBXGroup;
+			children = (
+				87E8288D185F3CA7000C6330 /* 05.obj */,
+			);
+			name = Chair;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +403,7 @@
 				87E8288B185F39DB000C6330 /* Wood.jpg in Resources */,
 				876292C0185C4C9A00E7EA78 /* cube_top.jpg in Resources */,
 				876292C5185C4C9A00E7EA78 /* Storyboard_iPad.storyboard in Resources */,
+				87E8288E185F3CA7000C6330 /* 05.obj in Resources */,
 				876292D6185C538900E7EA78 /* Lightbulb.obj in Resources */,
 				876292C3185C4C9A00E7EA78 /* Storyboard_iPhone.storyboard in Resources */,
 				876292A0185C4C9A00E7EA78 /* Default-portrait~ipad.png in Resources */,
